@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 textarea {
     resize: none;
 }
@@ -11,6 +15,21 @@ textarea {
 #logo {
     max-width: 100px;
 }
+
+ul {
+    font-size: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #ffc107 !important;
+    font-size: 25px;
+    text-shadow: 3px 3px rgb(238, 85, 58);
+}
+
 
 .portada {
     width: 100%;
@@ -27,7 +46,6 @@ textarea {
 }
 
 .portada h1 {
-    font-weight: 200;
     font-size: 50px;
     border: 4px solid rgb(255, 255, 255);
     border-radius: 1rem;
@@ -37,22 +55,70 @@ textarea {
 footer {
     width: auto;
     height: auto;
-    background-color: black;
+    background-color: rgba(33, 37, 41, var(--bs-bg-opacity, 1));
     font-size: 20px;
     padding: 10px;
     text-align: center;
-    color: white; }
-
-footer a {
-    text-decoration: none;
     color: white;
-    font-size: 30px;
+
 }
 
 #anuncioIc {
-    font-size: 50px; }
-    
+    font-size: 50px;
+}
+
 .anuncio {
     text-align: center;
-    color: black; }
+    color: black;
+}
 
+.burger-nombre {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+#colecImg {
+    border-radius: 10px;
+}
+
+.nosotros {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.507)), url(fotos/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#parrafo-nosotros {
+    font-size: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+#contactoButton {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    background-color: #ffc107;
+    border-radius: 5px;
+    max-width: 200px;
+}
+
+#contImg {
+    max-width: 250px;
+}
+
+.back-contacto{
+    background-color: rgba(33,37,41,var(--bs-bg-opacity,1));
+}
